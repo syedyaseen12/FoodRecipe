@@ -36,7 +36,7 @@ export const eventsdata = [
   },
   {
     img: couple,
-    title: "wedding Ceramony",
+    title: "Weddings ",
     desciption:
       "In the new era of technology we look in the future with certainty for life",
   },
@@ -61,48 +61,61 @@ export const cardData = [
     price: "$14.9",
     name: "Fried Eggs",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+    type:"BreakFast"
   },
   {
     img: pic2,
     price: "$14.9",
     name: "Soda",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+        type:"Drinks"
+
   },
   {
     img: pic3,
     price: "$14.9",
     name: "Maritnez CockTail",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+            type:"Drinks"
+
   },
   {
     img: pic4,
     price: "$14.9",
     name: "PanCake ",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+            type:"Breakfast"
+
   },
   {
     img: pic5,
     price: "$14.9",
     name: "Burger",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+    type:"Breakfast"
   },
   {
     img: pic6,
     price: "$14.9",
     name: "Choclate Icecream",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+    type:"Desserts"
   },
   {
     img: pic7,
     price: "$14.9",
     name: "Butterscotch Cake",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+        type:"Desserts"
+
   },
   {
     img: pic,
     price: "$14.9",
     name: "Cheese Cake",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
+        type:"Desserts"
+
   },
 ];
 
@@ -120,19 +133,19 @@ export const cardData = [
    },
    {
      img: cheeseicon,
-     name: "Breakfast",
+     name: "Desserts",
      description: "Delicous meal on Earth, You'll have to take a bite",
      btnname: "Explore Menu",
    },
    {
      img: drinkicon,
-     name: "Breakfast",
+     name: "Drinks",
      description: "Delicous meal on Earth, You'll have to take a bite",
      btnname: "Explore Menu",
    },
    {
      img: coffeicon,
-     name: "Breakfast",
+     name: "Coffee",
      description: "Delicous meal on Earth, You'll have to take a bite",
      btnname: "Explore Menu",
    },
@@ -145,7 +158,7 @@ export const renderData = {
   feedback: [
     {
       id: 1,
-      title: "The Best restaurant",
+      title: "The best restaurant",
       body: `Last night, we dined at place and were simply blown away. From the
               moment we stepped in, we were enveloped in an inviting atmosphere
               and greeted with warm smiles.`,
@@ -157,7 +170,7 @@ export const renderData = {
     },
     {
       id: 2,
-      title: "The Best hospitality",
+      title: "Simply delicious",
       body: `Last night, we dined at place and were simply blown away. From the
               moment we stepped in, we were enveloped in an inviting atmosphere
               and greeted with warm smiles.`,
@@ -169,7 +182,7 @@ export const renderData = {
     },
     {
       id: 2,
-      title: "The Best hospitality",
+      title: "One of a kind restaurent",
       body: `Last night, we dined at place and were simply blown away. From the
               moment we stepped in, we were enveloped in an inviting atmosphere
               and greeted with warm smiles.`,

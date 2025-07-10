@@ -4,22 +4,20 @@ import Card from "../Components/Cards/RecipeCard";
 import Footer from "../Components/Layouts/Footer";
 import Social from "../Components/OrderingApps";
 import { cardData } from "../lib/data";
-
-const Homepage = () => {
+const HomePage = () => {
   return (
     <div>
       <Navbar />
       <Header />
-      <div className="flex justify-center gap-4 flex-wrap m-20">
+      {/* <div className="flex justify-center gap-4 flex-wrap m-20">
         {cardData.map((item) => (
           <Card info={item} />
         ))}
-      </div>
-
+      </div> */}
       <Social />
       <Footer />
     </div>
   );
 };
 
-export default Homepage;
+export default HomePage;

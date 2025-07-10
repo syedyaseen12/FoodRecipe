@@ -2,16 +2,16 @@ import './index.css';
 import { Routes, Route } from 'react-router';
 import 'leaflet/dist/leaflet.css';
 
-import Homepage from "./Pages/Homepage"
-import Landingpage from "./Pages/Landingpage"
-import Mappage from "./Pages/Mappage"
+import HomePage from "./Pages/HomePage"
+import LandingPage from "./Pages/LandingPage"
+import MapPage from "./Pages/MapPage"
 const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/Landingpage" element={<Landingpage />} />
-        <Route path="/Mappage" element={<Mappage/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/LandingPage" element={<LandingPage />} />
+        <Route path="/MapPage" element={<MapPage/>} />
       </Routes>
     </div>
   )

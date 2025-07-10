@@ -1,4 +1,3 @@
-import React from "react";
 import Herocard from "../../Assets/HeroCard.png";
 import Button from "../UI/Button";
 
@@ -6,7 +5,7 @@ const HeroSection = () => {
   return (
     <div>
       <div
-        className="w-full min-h-screen bg-center bg-cover mt-10  flex flex-col items-center justify-center  "
+        className="w-full min-h-screen bg-center bg-cover flex flex-col items-center justify-center  "
         style={{ backgroundImage: `url(${Herocard})` }}
       >
         <div className="textarea flex flex-col justify-center items-center mb-2">

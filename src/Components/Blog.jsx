@@ -3,7 +3,7 @@ import BlogCard from "./Cards/BlogCard";
 import MiniCard from "./Cards/MiniCard";
 const Blog = () => {
   return (
-    <div className="flex flex-col items-start  p-10 pt-14 bg-[#F9F9F7]">
+    <div className="flex flex-col items-start  p-10 pt-16 bg-[#F9F9F7]">
       <div className="flex justify-between items-center w-full px-10 mb-10">
         <h1 className="text-4xl font-playfair text-[#2c2f24]">
           Our Blog & Article

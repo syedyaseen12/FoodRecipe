@@ -4,6 +4,23 @@ import bbq from "../Assets/bbq.png";
 import timeicon from "../Assets/past.png";
 import cart from "../Assets/cart.png";
 import offer from "../Assets/offer.png";
+
+const deliveryData = {
+  deliveryservices: [
+    {
+      img: cart,
+      body: "Delivery within 30 minutes",
+    },
+    {
+      img: offer,
+      body: "Delivery within 30 minutes",
+    },
+    {
+      img: timeicon,
+      body: "Delivery within 30 minutes",
+    },
+  ],
+};
 const Fooddelivery = () => {
   return (
     <div className=" flex justify-evenly pt-32 pb-20 bg-[#f9f9f7] items-center ">
@@ -28,18 +45,12 @@ const Fooddelivery = () => {
         </div>
 
         <ul className="space-y-4  mt-5  ">
-          <li className="flex  gap-2 items-center">
-            <img src={timeicon} />
-            <span className="font-medium">Delivery within 30 minutes</span>
-          </li>
-          <li className="flex  gap-2">
-            <img src={cart} />
-            <span className="font-medium">Best Offer & Prices</span>
-          </li>
-          <li className="flex  gap-2">
-            <img src={offer} />
-            <span className="font-medium">Online Service Available</span>
-          </li>
+          {deliveryData.deliveryservices.map((item) => (
+            <li className="flex  gap-2 items-center">
+              <img src={item.img} />
+              <span className="font-medium">{item.body}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

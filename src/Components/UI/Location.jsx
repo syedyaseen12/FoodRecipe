@@ -18,7 +18,7 @@ const Location = () => {
       <MapContainer
         center={position}
         zoom={15}
-        style={{ height: "700px", width: "100%" }}
+        style={{ height: "600px", width: "100%" }}
         scrollWheelZoom={true}
       >
         <TileLayer

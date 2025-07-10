@@ -1,10 +1,10 @@
 import Button from "./UI/Button";
-import InputFeild from "./UI/InputFeild";
+import InputField from "./UI/InputField";
 
 const map = () => {
   return (
-    <div className="bg-[#f9f9f7]">
-      <div className="flex  flex-col justify-center items-center  mt-10 text-[#2c2f24] text-wrap  ">
+    <div className="bg-[#f9f9f7] ">
+      <div className="flex  flex-col justify-center items-center   text-[#2c2f24] text-wrap  ">
         <h1 className="text-[77px] font-playfair text-[#2c2f24]">
           Book A Table
         </h1>
@@ -15,17 +15,17 @@ const map = () => {
       </div>
 
       <div className="flex justify-center items-center mt-10  ">
-        <form className="w-[650px] h-[520px]  flex flex-col justify-center items-center gap-5 rounded-xl z-10 bg-white">
+        <form className="w-[650px] h-[450px]  flex flex-col justify-center items-center gap-5 rounded-xl z-10 bg-white">
           {/* Date & Time */}
           <div className="flex gap-4 ">
             <div className="flex flex-col">
               <label
                 htmlFor="date"
-                className="mb-1 text-base text-[#2C2F24] font-semibold pl-4"
+                className="mb-1 text-base text-[#2C2F24] font-semibold s"
               >
                 Date
               </label>
-              <InputFeild
+              <InputField
                 id="date"
                 defaultValue="25-02-2003"
                 type="date"
@@ -36,14 +36,14 @@ const map = () => {
             <div className="flex flex-col">
               <label
                 htmlFor="time"
-                className="mb-1 text-base text-[#2C2F24] font-semibold pl-4"
+                className="mb-1 text-base text-[#2C2F24] font-semibold "
               >
                 Time
               </label>
               <select
                 id="time"
                 defaultValue="10:00 AM"
-                className="w-[270px] rounded-full border border-[#DBDFD0] px-4 py-3 text-[#737865] pl-4"
+                className="w-[270px] rounded-full border border-[#DBDFD0] px-4 py-3 text-[#737865] "
               >
                 <option value="" disabled>
                   Choose a time
@@ -60,11 +60,11 @@ const map = () => {
             <div className="flex flex-col">
               <label
                 htmlFor="name"
-                className="mb-1 text-base font-semibold text-[#2C2F24] pl-4"
+                className="mb-1 text-base font-semibold text-[#2C2F24] "
               >
                 Full Name
               </label>
-              <InputFeild
+              <InputField
                 id="name"
                 type="text"
                 placeholder="Enter Your Name"
@@ -75,13 +75,13 @@ const map = () => {
             <div className="flex flex-col">
               <label
                 htmlFor="phone"
-                className="mb-1 text-base font-semibold text-[#2C2F24] pl-4"
+                className="mb-1 text-base font-semibold text-[#2C2F24] "
               >
                 Phone Number
               </label>
-              <InputFeild
+              <InputField
                 id="phone"
-                type="number"
+                type="Number"
                 placeholder="x-xxx-xxx-xxx"
                 className="w-[270px] outline-none text-[#737865] rounded-full border border-[#DBDFD0] px-4 py-3"
               />
@@ -89,16 +89,16 @@ const map = () => {
           </div>
 
           {/* Guests */}
-          <div className="flex flex-col w-[80%]">
+          <div className="flex flex-col w-[84%]">
             <label
               htmlFor="guests"
               className="mb-1 text-base font-semibold text-[#2C2F24]"
             >
-              Number of Guests
+              Total Person
             </label>
             <select
               id="guests"
-              className="outline-none text-[#737865] rounded-full border border-[#DBDFD0] px-4 py-3"
+              className="text-[#737865] rounded-full border border-[#DBDFD0] px-4 py-3 "
             >
               <option value="">1 person</option>
               <option value="1 Seat">1 Seat</option>
@@ -109,7 +109,7 @@ const map = () => {
           </div>
 
           {/* Button */}
-          <div className="px-4 py-3 rounded-full border border-[#DBDFD0] w-[80%] flex justify-center text-white font-semibold bg-[#AD3432]">
+          <div className="px-4 py-3 rounded-full border border-[#DBDFD0] w-[84%] flex justify-center text-white font-semibold bg-[#AD3432]">
             <Button title="Book A Table" />
           </div>
         </form>

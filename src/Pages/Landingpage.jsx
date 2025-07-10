@@ -1,31 +1,34 @@
-import Address from "../Components/ContactandService";
-import Browsecard from "../Components/Cards/Browsecard";
+import Address from "../Components/ContactAndService";
+import BrowseCard from "../Components/Cards/BrowseCard";
 import HeroSection from "../Components/Layouts/HeroSection";
 import Navbar from "../Components/Layouts/Navbar";
 import Events from "../Components/Cards/EventsCard";
-import Fooddelivery from "../Components/Fooddelivery";
+import FoodDelivery from "../Components/FoodDelivery";
 import Feedback from "../Components/Cards/FeedbackCard";
 import Blog from "../Components/Blog";
+import Footer from "../Components/Layouts/Footer";
 import { browseData } from "../lib/data";
 
-const Landingpage = () => {
+const LandingPage = () => {
   return (
     <div>
-      <Navbar />
+      <div className="pb-14 bg-[#f9f9f9]">
+        <Navbar />
+      </div>
       <HeroSection />
       <div className="m-20 mt-10 flex justify-center items-center gap-4 flex-wrap ">
         {browseData.map((item) => {
-          return <Browsecard data={item} />;
+          return <BrowseCard data={item} />;
         })}
       </div>
       <Address />
       <Events />
-      <Fooddelivery />
+      <FoodDelivery />
       <Feedback />
-
       <Blog />
+      <Footer />
     </div>
   );
 };
 
-export default Landingpage;
+export default LandingPage;

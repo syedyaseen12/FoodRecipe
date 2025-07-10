@@ -1,15 +1,16 @@
-import React from "react";
 import Map from "../Components/MapForm";
 import Location from "../Components/UI/Location";
 import Navbar from "../Components/Layouts/Navbar";
-const Mappage = () => {
+const MapPage = () => {
   return (
     <div>
-      <Navbar />
+      <div className="bg-[#f9f9f9] pb-10 ">
+        <Navbar />
+      </div>
       <Map />
       <Location />
     </div>
   );
 };
 
-export default Mappage;
+export default MapPage;

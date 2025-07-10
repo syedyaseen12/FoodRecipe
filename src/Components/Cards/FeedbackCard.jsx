@@ -1,7 +1,7 @@
 import { renderData } from "../../lib/data";
 const Feedback = () => {
   return (
-    <div className="flex flex-col items-center mt-10 pb-24">
+    <div className="flex flex-col items-center mt-20 pb-24">
       <h1 className="text-4xl font-bold font-playfair text-[#2c2f24] mb-10">
         What Our Customers Say
       </h1>
@@ -10,7 +10,7 @@ const Feedback = () => {
         {renderData.feedback.map((item, id) => (
           <div
             key={id}
-            className=" review card w-[27%]  p-5 mt-4 rounded-lg bg-[#f9f9f7]"
+            className=" review card w-[25%]  p-5 mt-4 rounded-lg bg-[#f9f9f7]"
           >
             <div className="text section flex flex-col justify-start items-start  gap-4 ">
               <span className="font-bold text-xl text-[#AD343E] mt-3">
