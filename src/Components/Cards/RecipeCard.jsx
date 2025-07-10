@@ -7,6 +7,7 @@ const Card = ({ info }) => {
         <div>
           <img
             src={info.img}
+            alt="images"
             className="h-44 w-60  rounded-t-md object-cover "
           />
         </div>

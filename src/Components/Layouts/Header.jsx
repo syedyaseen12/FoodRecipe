@@ -8,19 +8,21 @@ const Header = () => {
   const [filteredCards, setFilteredCards] = useState(cardData);
   const [searchterm, setSearchterm] = useState("");
 
-  const handleFilter = (type) => {
-    const filter =
-      type === "All" ? cardData : cardData.filter((item) => item.type === type);
-    setFilteredCards(filter);
+  const handleFilter = (option) => {
+    if (option === "All") {
+      setFilteredCards(cardData);
+    } else {
+      const filter = cardData.filter((item) => item.type === option);
+      setFilteredCards(filter);
+    }
   };
 
   useEffect(() => {
-    // Filter data when search term changes
     const filtered = cardData.filter((item) =>
       item.name.toLowerCase().includes(searchterm.toLowerCase())
     );
     setFilteredCards(filtered);
-  }, []);
+  }, [searchterm]);
 
   return (
     <div>
@@ -36,7 +38,7 @@ const Header = () => {
         value={searchterm}
         placeholder="Search"
         onChange={(e) => setSearchterm(e.target.value)}
-        class="w-full h-full outline-none text-gray-500 placeholder-gray-500 text-sm"
+        className="w-full h-full outline-none text-gray-500 placeholder-gray-500 text-sm"
       />
 
       <div className=" flex justify-center mt-12  gap-3">
@@ -49,7 +51,7 @@ const Header = () => {
         ))}
       </div>
       <div className="flex justify-center gap-4 flex-wrap m-20">
-        {filteredCards.map((card) => (
+        {filteredCards?.map((card) => (
           <RecipeCard key={card.id} info={card} />
         ))}
       </div>

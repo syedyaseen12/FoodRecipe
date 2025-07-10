@@ -2,9 +2,9 @@ import './index.css';
 import { Routes, Route } from 'react-router';
 import 'leaflet/dist/leaflet.css';
 
-import HomePage from "./Pages/HomePage"
-import LandingPage from "./Pages/LandingPage"
-import MapPage from "./Pages/MapPage"
+import HomePage from "./pages/HomePage"
+import LandingPage from "./pages/LandingPage"
+import MapPage from "./pages/MapPage"
 const App = () => {
   return (
     <div>

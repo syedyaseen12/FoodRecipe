@@ -120,7 +120,7 @@ export const cardData = [
 ];
 
 // buttons names
- export const buttondata = ["All", "Breakfast", "Main Dishes", "Drinks", "Desserts"];
+ export const buttondata = ["All", "Breakfast", "Main Dishes", "Drinks", "Seafood"];
 
 
 // browsecard data
