@@ -1,12 +1,12 @@
-import { blogdata } from "../lib/data";
-import BlogCard from "./Cards/BlogCard";
-import MiniCard from "./Cards/MiniCard";
+import { blogdata } from "../../lib/data";
+import BlogCard from "../Cards/BlogCard";
+import MiniCard from "../Cards/MiniCard";
 const Blog = () => {
   return (
     <div className="flex flex-col items-start  p-10 pt-16 bg-[#F9F9F7]">
       <div className="flex justify-between items-center w-full px-10 mb-10">
         <h1 className="text-4xl font-playfair text-[#2c2f24]">
-          Our Blog & Article
+          Our Blog & Articles
         </h1>
         <button className="bg-[#AD343E] text-white font-semibold px-6 py-4 rounded-full mr-6">
           Read All Articles

@@ -16,9 +16,7 @@ const Feedback = () => {
               <span className="font-bold text-xl text-[#AD343E] mt-3">
                 {item.title}
               </span>
-              <p className="text-wrap font-medium text-[#414536]">
-                {item.body}
-              </p>
+              <p className="text-wrap font-sans text-[#414536]">{item.body}</p>
             </div>
             <hr className="h-px bg-[#E4E7Dc] border-0 mt-6" />
             <div className="profile flex   mt-6 gap-4">

@@ -1,18 +1,18 @@
-import Button from "./UI/Button";
-import InputField from "./UI/InputField";
+import Button from "../UI/Button";
+import InputField from "../UI/InputField";
 
 const map = () => {
   return (
     <div className="bg-[#f9f9f7] ">
-      <div className="flex  flex-col justify-center items-center   text-[#2c2f24] text-wrap  ">
+      <section className="flex  flex-col justify-center items-center   text-[#2c2f24] text-wrap  ">
         <h1 className="text-[77px] font-playfair text-[#2c2f24]">
           Book A Table
         </h1>
-        <p className="text-[#495460] text-center ">
+        <p className="text-[#495460] text-center font-normal">
           We consider all the drivers of change gives you the components <br />{" "}
           you need to change to create a truly happens.
         </p>
-      </div>
+      </section>
 
       <div className="flex justify-center items-center mt-10  ">
         <form className="w-[650px] h-[450px]  flex flex-col justify-center items-center gap-5 rounded-xl z-10 bg-white">
@@ -33,7 +33,7 @@ const map = () => {
               />
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col p">
               <label
                 htmlFor="time"
                 className="mb-1 text-base text-[#2C2F24] font-semibold "

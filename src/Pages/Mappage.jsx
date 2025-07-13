@@ -1,4 +1,4 @@
-import Map from "../Components/MapForm";
+import Map from "../Components/Sections/MapForm";
 import Location from "../Components/UI/Location";
 import Navbar from "../Components/Layouts/Navbar";
 const MapPage = () => {

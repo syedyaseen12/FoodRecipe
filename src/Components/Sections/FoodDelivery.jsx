@@ -1,9 +1,9 @@
-import chef from "../Assets/chef.png";
-import fish from "../Assets/fishshells.png";
-import bbq from "../Assets/bbq.png";
-import timeicon from "../Assets/past.png";
-import cart from "../Assets/cart.png";
-import offer from "../Assets/offer.png";
+import chef from "../../Assets/chef.png";
+import fish from "../../Assets/fishshells.png";
+import bbq from "../../Assets/bbq.png";
+import timeicon from "../../Assets/past.png";
+import cart from "../../Assets/cart.png";
+import offer from "../../Assets/offer.png";
 
 const deliveryData = {
   deliveryservices: [
@@ -13,11 +13,11 @@ const deliveryData = {
     },
     {
       img: offer,
-      body: "Delivery within 30 minutes",
+      body: "Best Offer & Prices",
     },
     {
       img: timeicon,
-      body: "Delivery within 30 minutes",
+      body: "Online Services Available",
     },
   ],
 };
@@ -34,21 +34,21 @@ const Fooddelivery = () => {
         </div>
       </div>
       <div className="flex flex-col  items-start gap-6 text-wrap">
-        <div className="text-wrap flex flex-col gap-6">
-          <h1 className="text-5xl font-playfair ">
+        <section className="text-wrap flex flex-col gap-6">
+          <h1 className="text-5xl font-playfair text-[#2c2f24] ">
             Fastest Food <br /> Delivery in City
           </h1>
-          <p className="text-sm">
+          <p className="text-sm text-[#414536]">
             Our visual designer lets you quickly and of drag a down <br />
             your way to customapps for both keep desktop.
           </p>
-        </div>
+        </section>
 
         <ul className="space-y-4  mt-5  ">
-          {deliveryData.deliveryservices.map((item) => (
-            <li className="flex  gap-2 items-center">
+          {deliveryData.deliveryservices.map((item, index) => (
+            <li key={index} className="flex  gap-2 items-center ">
               <img src={item.img} />
-              <span className="font-medium">{item.body}</span>
+              <span className="font-medium text-[#2c2f24]">{item.body}</span>
             </li>
           ))}
         </ul>

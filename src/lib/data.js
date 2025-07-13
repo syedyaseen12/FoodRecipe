@@ -42,13 +42,13 @@ export const eventsdata = [
   },
   {
     img: kebabpop,
-    title: "Partys",
+    title: "Caterings",
     desciption:
       "In the new era of technology we look in the future with certainty for life",
   },
   {
     img: friends,
-    title: "Get together",
+    title: "Events",
     desciption:
       "In the new era of technology we look in the future with certainty for life",
   },
@@ -57,6 +57,7 @@ export const eventsdata = [
 // Recipe Card data 
 export const cardData = [
   {
+    id:1,
     img: pic,
     price: "$14.9",
     name: "Fried Eggs",
@@ -64,30 +65,34 @@ export const cardData = [
     type:"BreakFast"
   },
   {
+   id:2,
     img: pic2,
     price: "$14.9",
-    name: "Soda",
+    name: "Mint Lemonade",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
         type:"Drinks"
 
   },
   {
+    id:3,
     img: pic3,
     price: "$14.9",
-    name: "Maritnez CockTail",
+    name: "Maritnez Cocktail",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
             type:"Drinks"
 
   },
   {
+    id:4,
     img: pic4,
     price: "$14.9",
-    name: "PanCake ",
+    name: "Classic Waffles",
     Description: "Delicious food Ever, With caramel cheese and Spinach ",
             type:"Breakfast"
 
   },
   {
+     id:5,
     img: pic5,
     price: "$14.9",
     name: "Burger",
@@ -95,6 +100,7 @@ export const cardData = [
     type:"Breakfast"
   },
   {
+    id:6,
     img: pic6,
     price: "$14.9",
     name: "Choclate Icecream",
@@ -102,6 +108,7 @@ export const cardData = [
     type:"Desserts"
   },
   {
+    id:7,
     img: pic7,
     price: "$14.9",
     name: "Butterscotch Cake",
@@ -110,6 +117,7 @@ export const cardData = [
 
   },
   {
+     id:8,
     img: pic,
     price: "$14.9",
     name: "Cheese Cake",
@@ -120,7 +128,7 @@ export const cardData = [
 ];
 
 // buttons names
- export const buttondata = ["All", "Breakfast", "Main Dishes", "Drinks", "Seafood"];
+ export const buttondata = ["All", "Breakfast", "Main Dishes", "Drinks", "Desserts"];
 
 
 // browsecard data
@@ -159,37 +167,31 @@ export const renderData = {
     {
       id: 1,
       title: "The best restaurant",
-      body: `Last night, we dined at place and were simply blown away. From the
-              moment we stepped in, we were enveloped in an inviting atmosphere
-              and greeted with warm smiles.`,
+      body: `Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.`,
       profile: {
         profilepic: c1,
         profilename: "Yaseen",
-        place: "new York",
+        place: "New York",
       },
     },
     {
       id: 2,
       title: "Simply delicious",
-      body: `Last night, we dined at place and were simply blown away. From the
-              moment we stepped in, we were enveloped in an inviting atmosphere
-              and greeted with warm smiles.`,
+      body: `Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.`,
       profile: {
         profilepic: c2,
         profilename: "lala",
-        place: "germany",
+        place: "Germany",
       },
     },
     {
-      id: 2,
+      id: 3,
       title: "One of a kind restaurent",
-      body: `Last night, we dined at place and were simply blown away. From the
-              moment we stepped in, we were enveloped in an inviting atmosphere
-              and greeted with warm smiles.`,
+      body:` The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.`,
       profile: {
         profilepic: c4,
         profilename: "benji",
-        place: "USA",
+        place: "Japan",
       },
     },
   ],
@@ -208,19 +210,19 @@ export const blogdata = {
       id: 2,
       img: french,
       date: "january 01.01.2001",
-      body: "How to Prepare Delicious Food",
+      body: "How to prepare delicious chicken tenders",
     },
     {
       id: 3,
       img: choclate,
       date: "january 01.01.2001",
-      body: "How to Prepare Delicious Food",
+      body: "7 delicious cheesecake recipes you can prepare",
     },
     {
       id: 4,
       img: pizza,
       date: "january 01.01.2001",
-      body: "How to Prepare Delicious Food",
+      body: "5 great pizza restaurants you should visit this city",
     },
   ],
   herosection: [
